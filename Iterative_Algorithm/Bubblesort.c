@@ -1,22 +1,22 @@
 #include<stdio.h>
 
-void bubbleSort(int array[], int n){
+void bubbleSort(int A[], int n){
     for(int i=0; i<n-1; i++){
 
         for(int j=0; j<n-i-1; j++){
-            if(array[j]>array[j+1]){
-                int temp = array[j];
-                array[j]= array[j+1];
-                array[j+1] = temp;
+            if(A[j]>A[j+1]){
+                int temp = A[j];
+                A[j]= A[j+1];
+                A[j+1] = temp;
             }
         }
     }
 }
 
 //Function to print an array
-void printArray(int array[], int n){
+void printArray(int A[], int n){
     for(int i =0; i<n; ++i){
-        printf("%d ", array[i]);
+        printf("%d ", A[i]);
     }
     printf("\n");
 }
